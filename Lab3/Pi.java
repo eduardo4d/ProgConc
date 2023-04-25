@@ -1,4 +1,3 @@
-
 /*  Disciplina: Computacao Concorrente
     Prof.: Silvana Rossetto
     Laboratório: 3
@@ -33,6 +32,10 @@ class Calc extends Thread {
     for(int i=t; i<n; i+=ts){
       this.part += Math.pow(-1, i) * (1.0 / (2*i + 1));
     }
+/*
+  //--imprime o id de cada thread na ordem em que finalizam a conta
+      System.out.printf(t+" ");
+*/
   }
 
 }
@@ -48,7 +51,7 @@ class Pi{
     
     // java Pi <número de termos> <número de threads>
     if(args.length!=2){
-      System.out.println("Digite: java Pi <n#termos> <n#threads>");
+      System.out.println("Digite:   java Pi <n#termos> <n#threads>");
         System.exit(1);
     }
 
@@ -57,6 +60,8 @@ class Pi{
 
     //--reserva espaço para um vetor de threads
     Thread[] threads = new Thread[ts];
+
+    System.out.printf("%nPara %d termos e %d threads :%n", n, ts);
 
     //--PASSO 2: cria threads da classe que estende Thread
     for (int i=0; i<threads.length; i++) {
@@ -77,11 +82,10 @@ class Pi{
     }
 
     total *= 4;
-    System.out.printf(
-      "%nPara %d termos e %d threads %n"+
-      "%n  Pi calculado: %.15f %n"+
-      "%n  Pi exato:     %.15f %n"+
-      "%n  Erro:         %f %n %n", 
-      n, ts, total, Math.PI, Math.abs(Math.PI - total) );    
+    System.out.printf("%n"+
+      "%n  Pi calculado:  %.15f %n"+
+      "%n  Pi exato:      %.15f %n"+
+      "%n  Erro:          %f %n %n",
+      total, Math.PI, Math.abs(Math.PI - total) );    
   }
 }
