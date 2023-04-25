@@ -2,7 +2,7 @@
 /*  Disciplina: Computacao Concorrente
     Prof.: Silvana Rossetto
     Laboratório: 3
-    Programa concorrente em Java que calcula série que gera Pi
+    Programa concorrente em Java que calcula a série que gera Pi
     Autor: Eduardo Kota Otomo
     DRE: 118147443
 */
