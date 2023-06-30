@@ -104,7 +104,7 @@ class Trabalho {
       case "3":
         System.out.println("f(x)=x^3,  F(x)=x^4/4\n");
         f = x -> x*x*x;
-        F = x -> x*x*x/4;
+        F = x -> x*x*x*x/4;
         break;
       case "4":
         System.out.println("f(x)=cos(x),  F(x)=sen(x)\n");
