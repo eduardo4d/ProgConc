@@ -1,12 +1,18 @@
 # Relatório final
+Trabalho: Integracao numerica por regra do Trapezio.
+Disciplina: Programação Concorrente (ICP361)
+Profesora: Silvana Rossetto
+Autor: Eduardo Kota Otomo
+DRE: 118147443
 
-# Descrição do problema
+
+## Descrição do problema
 
 Programa concorrente escrito em Java para Integração numérica via regra do trapézio.
 
 O objetivo é calcular a integral numérica. `integral.get()`
 
-# Projeto e implementacão da solução concorrente.
+## Projeto e implementacão da solução concorrente.
 
 
 
@@ -95,67 +101,124 @@ if (integralExata !=0){
 }
 ```
 
-Em todos os casos testado o erro relativo foi bem pequeno nunca excedendo 0.00001% comparado ao valor teórico `integralExata`.  
+Em todos os casos testado o erro relativo foi bem pequeno nunca excedendo 0.001% comparado ao valor teórico `integralExata`.  
 Logo os resultados são precisos e acurados.
-
-### `f(x)= x` integrado em [0,1]
-Integral exata: 0.5000000000
-
-|subintervalos| n =10 | n =20 |
-|-|-|-|
-|Integral numerica :|0.5000000000|0.5000000000|
-|Erro relativo: |0.0000000000 %|0.0000000000 %|
-
-### `f(x)= x` integrado em [1,2]
-Integral exata: 1.5000000000
-
-|subintervalos| n =10 | n =20 |
-|-|-|-|
-|Integral numerica :|1.5000000000|1.5000000000|
-|Erro relativo: |0.0000000000 %|0.0000000000 %|
-
-### `f(x)= x^2` integrado em [0,1]
-Integral exata: 0.3333333333
-
-|subintervalos| n =10 | n =20 |
-|-|-|-|
-|Integral numerica :|0.3350000000|0.3337500000|
-|Erro relativo: |0.0000500000 %|0.0000125000 %|
-
-### `f(x)= x^2` integrado em [1,2]
-Integral exata: 2.3333333333
-
-|subintervalos| n =10 | n =20 |
-|-|-|-|
-|Integral numerica :|2.3350000000|2.3337500000|
-|Erro relativo: |0.0000071429 %|0.0000017857 %|
-
-### `f(x)= x^3` integrado em [0,1]
-Integral exata: 0.2500000000
-
-|subintervalos| n =10 | n =20 |
-|-|-|-|
-|Integral numerica :|0.2525000000|0.2506250000|
-|Erro relativo: |0.0001000000 %|0.0000250000 %|
-
-### `f(x)= x^3` integrado em [1,2]
-Integral exata: 3.7575000000
-
-|subintervalos| n =10 | n =20 |
-|-|-|-|
-|Integral numerica :|2.3350000000|2.3337500000|
-|Erro relativo: |0.0000071429 %|0.0000017857 %|
-
 
 ## Avaliação de desempenho.
 
 Testada para as funções: `f(x)= x`, `f(x)= x^2`, `f(x)= x^3`, `f(x)= cos(x)`, `f(x)= sen(x)`.   
-Nos intervalos `[0,1]` e `[1,2]` 5 vezes cada tomando o valor médio.   
-Para 1, 2 ou 4 threads.Onde 1 thread equivale ao caso sequencial.   
+Nos intervalos `[0,1]` e `[1,2]` 5 vezes cada tomando o valor mediano (=/= médio).   
+Para 1 ou 4 threads. Onde 1 thread equivale ao caso sequencial.  
+Para `n = 10` ou `n = 20` subintervalos
 
-`n = 10` ou `n=20` subintervalos
+## Resultados tabelados
 
 ### `f(x)= x` integrado em [0,1]
+Integral exata: 0.5000000000
+
+|subintervalos| n = 10 | n = 20 |
+|-|-|-|
+|Integral numerica :|0.5000000000|0.5000000000|
+|Erro relativo: |0.0000000000 %|0.0000000000 %|
+|Tempo sequencial: |0.0000000000 ns|0.0000000000 ns|
+|Tempo p/ 4threads: |0.0000000000 ns|0.0000000000 ns|
+
+
+
+### `f(x)= x` integrado em [1,2]
+Integral exata: 1.5000000000
+
+|subintervalos| n = 10 | n = 20 |
+|-|-|-|
+|Integral numerica :|1.5000000000|1.5000000000|
+|Erro relativo: |0.0000000000 %|0.0000000000 %|
+|Tempo sequencial: |0.0000000000 ns|0.0000000000 ns|
+|Tempo p/ 4threads: |0.0000000000 ns|0.0000000000 ns|
+
+### `f(x)= x^2` integrado em [0,1]
+Integral exata: 0.3333333333
+
+|subintervalos| n = 10 | n = 20 |
+|-|-|-|
+|Integral numerica :|0.3350000000|0.3337500000|
+|Erro relativo: |0.0000500000 %|0.0000125000 %|
+|Tempo sequencial: |0.0000000000 ns|0.0000000000 ns|
+|Tempo p/ 4threads: |0.0000000000 ns|0.0000000000 ns|
+
+### `f(x)= x^2` integrado em [1,2]
+Integral exata: 2.3333333333
+
+|subintervalos| n = 10 | n = 20 |
+|-|-|-|
+|Integral numerica :|2.3350000000|2.3337500000|
+|Erro relativo: |0.0000071429 %|0.0000017857 %|
+|Tempo sequencial: |0.0000000000 ns|0.0000000000 ns|
+|Tempo p/ 4threads: |0.0000000000 ns|0.0000000000 ns|
+
+### `f(x)= x^3` integrado em [0,1]
+Integral exata: 0.2500000000
+
+|subintervalos| n = 10 | n = 20 |
+|-|-|-|
+|Integral numerica :|0.2525000000|0.2506250000|
+|Erro relativo: |0.0001000000 %|0.0000250000 %|
+|Tempo sequencial: |0.0000000000 ns|0.0000000000 ns|
+|Tempo p/ 4threads: |0.0000000000 ns|0.0000000000 ns|
+
+### `f(x)= x^3` integrado em [1,2]
+Integral exata: 3.7500000000
+
+|subintervalos| n = 10 | n = 20 |
+|-|-|-|
+|Integral numerica :|3.7575000000|3.7518750000|
+|Erro relativo: |0.0000200000 %|0.0000050000 %|
+|Tempo sequencial: |0.0000000000 ns|0.0000000000 ns|
+|Tempo p/ 4threads: |0.0000000000 ns|0.0000000000 ns|
+
+### `f(x)= cos(x)` integrado em [0,1]
+Integral exata: 0.8414709848
+
+|subintervalos| n = 10 | n = 20 |
+|-|-|-|
+|Integral numerica :|0.8407696421|0.8412956710|
+|Erro relativo: |0.0000083347 %|0.0000020834 %|
+|Tempo sequencial: |0.0000000000 ns|0.0000000000 ns|
+|Tempo p/ 4threads: |0.0000000000 ns|0.0000000000 ns|
+
+### `f(x)= cos(x)` integrado em [1,2]
+Integral exata: 0.0678264420
+
+|subintervalos| n = 10 | n = 20 |
+|-|-|-|
+|Integral numerica :|0.0677699106|0.0678123109|
+|Erro relativo: |0.0000083347 %|0.0000020834 %|
+|Tempo sequencial: |0.0000000000 ns|0.0000000000 ns|
+|Tempo p/ 4threads: |0.0000000000 ns|0.0000000000 ns|
+
+### `f(x)= sen(x)` integrado em [0,1]
+Integral exata: 0.4596976941
+
+|subintervalos| n = 10 | n = 20 |
+|-|-|-|
+|Integral numerica :|0.4593145489|0.4596019198|
+|Erro relativo: |0.0000083347 %|0.0000020834 %|
+|Tempo sequencial: |0.0000000000 ns|0.0000000000 ns|
+|Tempo p/ 4threads: |0.0000000000 ns|0.0000000000 ns|
+
+### `f(x)= sen(x)` integrado em [1,2]
+Integral exata: 0.9564491424
+
+|subintervalos| n = 10 | n =2 0 |
+|-|-|-|
+|Integral numerica :|3.7575000000|3.7518750000|
+|Erro relativo: |0.0000200000 %|0.0000050000 %|
+|Tempo sequencial: |0.0000000000 ns|0.0000000000 ns|
+|Tempo p/ 4threads: |0.0000000000 ns|0.0000000000 ns|
+
+
+
+
+ 
 
 
 
