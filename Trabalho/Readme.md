@@ -1,9 +1,9 @@
 # Relatório final
-Trabalho: Integracao numerica por regra do Trapezio.
-Disciplina: Programação Concorrente (ICP361)
-Profesora: Silvana Rossetto
-Autor: Eduardo Kota Otomo
-DRE: 118147443
+Trabalho: Integracao numerica por regra do Trapezio.   
+Disciplina: Programação Concorrente (ICP361)   
+Profesora: Silvana Rossetto   
+Autor: Eduardo Kota Otomo   
+DRE: 118147443   
 
 
 ## Descrição do problema
@@ -214,15 +214,3 @@ Integral exata: 0.9564491424
 |Erro relativo: |0.0000200000 %|0.0000050000 %|
 |Tempo sequencial: |951100 ns|963100 ns|
 |Tempo p/ 4threads: |1098000 ns|1102000 ns|
-
-
-
-
- 
-
-
-
-
-
-
-
