@@ -7,8 +7,8 @@
 */
 
 import java.util.InputMismatchException;
-import java.util.Scanner; // Import the Scanner class
-import java.lang.Math; // import class math
+import java.util.Scanner;
+import java.lang.Math;
 import java.util.function.Function;
 import java.time.Duration;
 
