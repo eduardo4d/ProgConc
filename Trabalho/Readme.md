@@ -124,6 +124,7 @@ Integral exata: 0.5000000000
 |Erro relativo: |0.0000000000 %|0.0000000000 %|
 |Tempo sequencial: |895001 ns|915100 ns|
 |Tempo p/ 4threads: |1132100 ns|1201602 ns|
+|Speedup: |0.790|0.762|
 
 ### `f(x)= x` integrado em [1,2]
 Integral exata: 1.5000000000
@@ -134,6 +135,7 @@ Integral exata: 1.5000000000
 |Erro relativo: |0.0000000000 %|0.0000000000 %|
 |Tempo sequencial: |896000 ns|910000 ns|
 |Tempo p/ 4threads: |1109650 ns|1191900 ns|
+|Speedup: |0.807|0.763|
 
 ### `f(x)= x^2` integrado em [0,1]
 Integral exata: 0.3333333333
@@ -144,6 +146,7 @@ Integral exata: 0.3333333333
 |Erro relativo: |0.0000500000 %|0.0000125000 %|
 |Tempo sequencial: |915000 ns|959100 ns|
 |Tempo p/ 4threads: |1128200 ns|1132900 ns|
+|Speedup: |0.811|0.847|
 
 ### `f(x)= x^2` integrado em [1,2]
 Integral exata: 2.3333333333
@@ -154,6 +157,7 @@ Integral exata: 2.3333333333
 |Erro relativo: |0.0000071429 %|0.0000017857 %|
 |Tempo sequencial: |915100 ns|960100 ns|
 |Tempo p/ 4threads: |1129300 ns|1133000 ns|
+|Speedup: |0.810|0.847|
 
 ### `f(x)= x^3` integrado em [0,1]
 Integral exata: 0.2500000000
@@ -164,6 +168,7 @@ Integral exata: 0.2500000000
 |Erro relativo: |0.0001000000 %|0.0000250000 %|
 |Tempo sequencial: |925100 ns|970100 ns|
 |Tempo p/ 4threads: |1228200 ns|1233010 ns|
+|Speedup: |0.753|0.787|
 
 ### `f(x)= x^3` integrado em [1,2]
 Integral exata: 3.7500000000
@@ -174,6 +179,7 @@ Integral exata: 3.7500000000
 |Erro relativo: |0.0000200000 %|0.0000050000 %|
 |Tempo sequencial: |922100 ns|970530 ns|
 |Tempo p/ 4threads: |1229300 ns|1233000 ns|
+|Speedup: |0.750|0.787|
 
 ### `f(x)= cos(x)` integrado em [0,1]
 Integral exata: 0.8414709848
