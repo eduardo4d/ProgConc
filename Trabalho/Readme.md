@@ -190,6 +190,7 @@ Integral exata: 0.8414709848
 |Erro relativo: |0.0000083347 %|0.0000020834 %|
 |Tempo sequencial: |950200 ns|951200 ns|
 |Tempo p/ 4threads: |1090000 ns|1092000 ns|
+|Speedup: |0.872|0.871|
 
 ### `f(x)= cos(x)` integrado em [1,2]
 Integral exata: 0.0678264420
@@ -200,6 +201,7 @@ Integral exata: 0.0678264420
 |Erro relativo: |0.0000083347 %|0.0000020834 %|
 |Tempo sequencial: |949200 ns|951100 ns|
 |Tempo p/ 4threads: |1089000 ns|1093000 ns|
+|Speedup: |0.872|0.870|
 
 ### `f(x)= sen(x)` integrado em [0,1]
 Integral exata: 0.4596976941
@@ -210,6 +212,7 @@ Integral exata: 0.4596976941
 |Erro relativo: |0.0000083347 %|0.0000020834 %|
 |Tempo sequencial: |951300 ns|961900 ns|
 |Tempo p/ 4threads: |1093000 ns|1099000 ns|
+|Speedup: |0.870|0.875|
 
 ### `f(x)= sen(x)` integrado em [1,2]
 Integral exata: 0.9564491424
@@ -220,3 +223,4 @@ Integral exata: 0.9564491424
 |Erro relativo: |0.0000200000 %|0.0000050000 %|
 |Tempo sequencial: |951100 ns|963100 ns|
 |Tempo p/ 4threads: |1098000 ns|1102000 ns|
+|Speedup: |0.866|0.874|
